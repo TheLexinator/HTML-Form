@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melsoft Academy Survey Form by Alexis Desani</title>
+</head>
+
+
+
+<body style="background-color: lightgreen;">
+    
+    <form action="submit-form" method="post"></form>
+    <form>
+
+        <header>
+        <h1 id="title" style="color: darkgreen;" >PROGRAMMING LANGUAGE SURVEY</h1>
+        </header>
+
+
+        <fieldset> 
+          <legend><h2>Add User</h2></legend>
+        
+
+            <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
+            </div>
+            
+            <div>
+            <label for="lastname">Last Name: </label>
+            <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
+            </div>
+
+            <div>
+            <label for="user_email">Email Address:</label>
+            <input type="email" name="user_email" id="user_email" placeholder="Email Address" required>
+            <div>
+
+            <div> 
+            <label for="status"><h3>Status:</h3>
+            <select id="status">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+            <option value="guest">Guest</option>
+            </select>
+            </div><br>
+
+
+                       
+        
+            <p><h3>What is your favourite programming language?</h3></p>
+        
+                <input type="radio" name="programming preference" id="html" >
+                <label for="html">HTML</label>
+            
+                <input type="radio" name="programming preference" id="css" >
+                <label for="css">CSS</label>
+            
+                <input type="radio" name="programming preference" id="javascript" >
+                <label for="javascript">JavaScript</label><br><br>
+            
+
+
+            <label for="comments"><h3>Comments</h3></label>
+            <textarea  ></textarea><br><br>
+            
+            <div>
+            <label for="date" ><h3>Current Date</h3></label>
+            <input type="date" name="date" id="date" min="2023-09-06"> <br><br><br>
+            </div>
+
+            <div>
+            <label for="sign_up">Sign up for the newsletter:</label>
+            <input type="checkbox" name="sign_up" id="sign_up"><br>
+
+            <label for="agree_terms">Agree to terms and conditions:</label>
+            <input type="checkbox" name="agree_terms" id="agree_terms" required><br>
+            </div>
+        
+    
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+</body>
+
+</html>
