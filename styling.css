@@ -1,3 +1,51 @@
-.formname{
-    
+/* Style the container for the boxes */
+
+header {
+    text-align: center;
+}
+
+
+body{
+    align-items: center;
+}
+
+.box {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+/* Style labels to align left */
+.box label {
+    flex: 1;
+    text-align: left;
+    padding-right: 10px;
+}
+
+/* Style inputs to align right */
+.box input {
+    flex: 1;
+    text-align: right;
+    padding-left: 10px;
+}
+
+/* Optional: Add some spacing and borders for better visual separation */
+.box {
+    padding: 10px;
+}
+
+.para{
+    display: flex;
+    line-height: 10px;
+}
+
+.info{
+    justify-items:center;
+}
+
+input{
+    text-align:left;
+}
+fieldset{
+    align-items: center;
 }
