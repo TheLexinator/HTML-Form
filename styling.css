@@ -1,51 +1,60 @@
 /* Style the container for the boxes */
-
+button {
+  font-family: Syne;
+  box-sizing: border-box;
+  width: 329px;
+  height: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: lightgrey;
+  border-radius: 28px;
+  border: 2px solid #000;
+}
 header {
-    text-align: center;
-}
-
-
-body{
-    align-items: center;
+  text-align: center;
 }
 
 .box {
-    width: 20%;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
 
-/* Style labels to align left */
-.box label {
-    flex: 1;
-    text-align: left;
-    padding-right: 10px;
-}
-
-/* Style inputs to align right */
 .box input {
-    flex: 1;
-    text-align: right;
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
-/* Optional: Add some spacing and borders for better visual separation */
-.box {
-    padding: 10px;
+.para {
+  display: flex;
+  line-height: 10px;
+  padding: 10px;
 }
 
-.para{
-    display: flex;
-    line-height: 10px;
+.grace {
+  display: flex;
+  flex-direction: row;
 }
 
-.info{
-    justify-items:center;
+.info {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
-input{
-    text-align:left;
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-fieldset{
-    align-items: center;
+
+span {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
 }

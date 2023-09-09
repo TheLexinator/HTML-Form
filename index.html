@@ -1,86 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Melsoft Academy Survey Form by Alexis Desani</title>
-    <link rel="stylesheet" href="styling.css">
-</head>
+    <link rel="stylesheet" href="styling.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-
-<body style="background-color: lightgreen;">
-    
+  <body style="background-color: lightgreen">
     <form action="submit-form" method="post">
+      <header>
+        <h1 id="title" style="color: darkgreen">PROGRAMMING LANGUAGE SURVEY</h1>
+      </header>
 
-        <header>
-        <h1 id="title" style="color: darkgreen;" >PROGRAMMING LANGUAGE SURVEY</h1>
-        </header>
+      <fieldset>
+        <legend><h2>Add User</h2></legend>
+        <div class="info">
+          <div class="box">
+            <label for="firstname">First Name:</label>
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              placeholder="First Name"
+              required
+            />
+          </div>
 
+          <div class="box">
+            <label for="lastname">Last Name: </label>
+            <input
+              type="text"
+              name="lastname"
+              id="lastname"
+              placeholder="Last Name"
+              required
+            />
+          </div>
 
-        <fieldset> 
-          <legend><h2>Add User</h2></legend>
-          <div class="info">
-            <div class="box">
-                <label for="firstname">First Name:</label>
-                <input type="text" name="firstname" id="firstname" placeholder="First Name" required>
-                </div>
-                
-                <div class="box">
-                <label for="lastname">Last Name: </label>
-                <input type="text" name="lastname" id="lastname" placeholder="Last Name" required>
-                </div>
-        
-                <div class="box">
-                <label for="user_email">Email Address:</label>
-                <input type="email" name="user_email" id="user_email" placeholder="Email Address" required>
-                </div>
-        
-                <div class="box"> 
-                <label for="status">Status:</label>
-                <select id="status">
-                <option value="student">Student</option>
-                <option value="teacher">Teacher</option>
-                <option value="guest">Guest</option>
-                </select>
-                </div><br>
-          </div>         
-    
+          <div class="box">
+            <label for="user_email">Email Address:</label>
+            <input
+              type="email"
+              name="user_email"
+              id="user_email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+
+          <div class="box">
+            <label for="status">Status:</label>
+            <select id="status">
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="guest">Guest</option>
+            </select>
+          </div>
+          <br />
+        </div>
+
         <h3>What is your favourite programming language?</h3>
-    
-            <input type="radio" name="programming preference" id="html" >
+        <span>
+          <div class="fave">
+            <input type="radio" name="programming preference" id="html" />
             <label for="html">HTML</label>
-        
-            <input type="radio" name="programming preference" id="css" >
+          </div>
+          <div class="fave">
+            <input type="radio" name="programming preference" id="css" />
             <label for="css">CSS</label>
-        
-            <input type="radio" name="programming preference" id="javascript" >
-            <label for="javascript">JavaScript</label><br><br>
-        
+          </div>
+          <div class="fave">
+            <input type="radio" name="programming preference" id="javascript" />
+            <label for="javascript">JavaScript</label><br /><br />
+          </div>
+        </span>
 
+        <h3>Comments</h3>
+        <textarea id="comments"></textarea><br /><br />
 
-        <label for="comments"><h3>Comments</h3></label>
-        <textarea id = "comments"></textarea><br><br>
-        
         <div>
-        <label for="date" ><h3>Current Date</h3></label>
-        <input type="date" name="date" id="date" min="2023-09-06"> <br><br><br>
+          <label for="date"><h3>Current Date</h3></label>
+          <input type="date" name="date" id="date" min="2023-09-06" />
+          <br /><br /><br />
         </div>
- 
-        <div>
-            <div class="para"><p for="sign_up">Sign up for the newsletter:</p>
-                <input type="checkbox" name="sign_up" id="sign_up"><br></div>
 
-<div class="para"><p for="agree_terms">Agree to terms and conditions:</p>
-    <input type="checkbox" name="agree_terms" id="agree_terms" required><br></div>
-        
+        <div class="grace">
+          <div class="para">
+            <p for="sign_up">Sign up for the newsletter:</p>
+            <input type="checkbox" name="sign_up" id="sign_up" /><br />
+          </div>
+
+          <div class="para">
+            <p for="agree_terms">Agree to terms and conditions:</p>
+            <input
+              type="checkbox"
+              name="agree_terms"
+              id="agree_terms"
+              required
+            /><br />
+          </div>
         </div>
-    
 
-        <br><br>
+        <br /><br />
         <button type="submit">Submit</button>
-        
-        </form>
-</body>
-
+      </fieldset>
+    </form>
+  </body>
 </html>
