@@ -14,7 +14,7 @@ button {
   border-radius: 28px;
   border: 2px solid #000;
 }
-header {
+.indexHeader {
   text-align: center;
 }
 
@@ -71,7 +71,6 @@ span {
   padding-left: 28px;
   justify-content: left;
 }
-
 
 img {
   width: 150px;
