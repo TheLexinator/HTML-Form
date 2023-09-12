@@ -65,10 +65,12 @@ span {
 .profile {
   display: flex;
   flex-direction: row;
+
 }
 
 .profileContent {
   padding-left: 28px;
+  justify-content: left;
 }
 
 img {
