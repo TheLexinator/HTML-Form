@@ -1,3 +1,4 @@
+/*Styling for index.html*/
 /* Style the container for the boxes */
 button {
   font-family: Syne;
@@ -57,4 +58,21 @@ span {
   display: flex;
   flex-direction: row;
   padding: 10px;
+}
+
+/*Styling for cv.html*/
+
+.profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.profileContent {
+  padding-left: 28px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
